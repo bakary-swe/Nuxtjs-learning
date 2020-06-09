@@ -23,6 +23,7 @@ export default {
   ** Global CSS
   */
   css: [
+    'bulma'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -33,14 +34,14 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxt/typescript-build',
+    '@nuxt/typescript-build'
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma',
+    '@nuxtjs/bulma'
   ],
   /*
   ** Build configuration
