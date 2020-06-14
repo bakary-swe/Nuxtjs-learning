@@ -1,9 +1,23 @@
-import { VuexModule, Module } from 'vuex-module-decorators'
+import Vuex from 'vuex';
+import { VuexModule, Module, Mutation, Action } from "vuex-module-decorators";
+import { ResourcesEntity } from '~/types';
+
 
 @Module({
-  namespaced: true,
-  name: 'resources'
+  name: 'Resources',
+  stateFactory: true,
+  namespaced: true
 })
-export class ResourcesModule extends VuexModule {
+export default class Resources extends VuexModule {
+  resources: ResourcesEntity[] = [];
 
+  @Mutation
+  setResources(resources: ResourcesEntity[]) {
+    this.resources = resources;
+  }
+
+  @Action( { commit: 'setResources'})
+  async fetchResources() {
+    return []
+  }
 }

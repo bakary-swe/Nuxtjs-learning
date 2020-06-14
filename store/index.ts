@@ -1,10 +1,12 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vuex, { Store } from 'vuex';
+import { VuexModule, getModule } from 'vuex-module-decorators';
+import { Courses, Resources } from './modules/index';
 
-Vue.use(Vuex)
-
-const store = new Vuex.Store({
-  state: {},
+export const store = () => getModule(VuexModule, new Vuex.Store({
   modules: {
+    Courses, Resources
   }
-})
+}))
+
+
+// export default getModule(store);
