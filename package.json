@@ -21,7 +21,7 @@
     "express": "^4.17.1",
     "ionicons": "^5.0.1",
     "node-sass": "^4.14.1",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "sass-loader": "^8.0.2",
     "vuex": "^3.4.0",
     "vuex-module-decorators": "^0.17.0",
